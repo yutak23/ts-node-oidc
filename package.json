@@ -1,7 +1,13 @@
 {
-  "name": "ts-node-oidc",
-  "version": "1.0.0",
-  "main": "index.ts",
-  "author": "yutak23",
-  "license": "MIT"
+	"name": "ts-node-oidc",
+	"version": "1.0.0",
+	"main": "index.ts",
+	"author": "yutak23",
+	"license": "MIT",
+	"scripts": {
+		"style": "prettier --write ."
+	},
+	"devDependencies": {
+		"prettier": "^2.8.8"
+	}
 }
