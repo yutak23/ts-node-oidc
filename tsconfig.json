@@ -6,6 +6,6 @@
 		"declaration": true,
 		"sourceMap": true
 	},
-	"include": ["srv/**/*"],
-	"exclude": ["node_modules", "dist"]
+	"include": ["srv/**/*.ts"],
+	"exclude": ["node_modules", "build"]
 }
