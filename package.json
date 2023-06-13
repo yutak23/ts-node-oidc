@@ -4,10 +4,16 @@
 	"main": "index.ts",
 	"author": "yutak23",
 	"license": "MIT",
+	"type": "module",
 	"scripts": {
+		"tsc": "tsc",
 		"style": "prettier --write ."
 	},
 	"devDependencies": {
-		"prettier": "^2.8.8"
+		"@tsconfig/node16": "^1.0.4",
+		"@tsconfig/strictest": "^2.0.1",
+		"@types/node": "^16.18.35",
+		"prettier": "^2.8.8",
+		"typescript": "^5.1.3"
 	}
 }

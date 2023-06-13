@@ -1,0 +1,11 @@
+{
+	"extends": ["@tsconfig/node16/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
+	"compilerOptions": {
+		"moduleResolution": "node16",
+		"outDir": "./build",
+		"declaration": true,
+		"sourceMap": true
+	},
+	"include": ["srv/**/*"],
+	"exclude": ["node_modules", "dist"]
+}
