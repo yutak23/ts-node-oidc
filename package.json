@@ -12,7 +12,11 @@
 		"prepare": "npx simple-git-hooks"
 	},
 	"simple-git-hooks": {
+		"pre-commit": "npx lint-staged --verbose",
 		"commit-msg": "npx commitlint -e"
+	},
+	"lint-staged": {
+		"yarn.lock": "npx license-checker --production --failOn \"GPL;AGPL;LGPL;NGPL\" --summary"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.6.5",
@@ -28,6 +32,8 @@
 		"eslint-config-airbnb-typescript": "^17.0.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-import": "^2.27.5",
+		"license-checker": "^25.0.1",
+		"lint-staged": "^13.2.2",
 		"prettier": "^2.8.8",
 		"simple-git-hooks": "^2.8.1",
 		"tsconfig-paths": "^4.2.0",
