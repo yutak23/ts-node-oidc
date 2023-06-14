@@ -7,10 +7,17 @@
 	"type": "module",
 	"scripts": {
 		"tsc": "tsc",
-		"lint": "eslint . --ext .cjs,.mjs,.js,.ts",
-		"style": "prettier --write ."
+		"lint": "eslint . --ext .cjs,.mjs,.js,.ts,.cts,.mts",
+		"style": "prettier --write .",
+		"prepare": "npx simple-git-hooks"
+	},
+	"simple-git-hooks": {
+		"commit-msg": "npx commitlint -e"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^17.6.5",
+		"@commitlint/config-conventional": "^17.6.5",
+		"@commitlint/types": "^17.4.4",
 		"@tsconfig/node16": "^1.0.4",
 		"@tsconfig/strictest": "^2.0.1",
 		"@types/node": "^16.18.35",
@@ -22,6 +29,8 @@
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-import": "^2.27.5",
 		"prettier": "^2.8.8",
+		"simple-git-hooks": "^2.8.1",
+		"tsconfig-paths": "^4.2.0",
 		"typescript": "~5.0.4"
 	}
 }

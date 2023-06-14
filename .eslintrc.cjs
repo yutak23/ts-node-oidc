@@ -20,5 +20,6 @@ module.exports = {
 			files: ['./**/*.{ts,tsx}']
 		}
 	],
+	rules: { 'import/no-extraneous-dependencies': ['warn', { packageDir: './' }] },
 	ignorePatterns: ['build', 'node_modules']
 };
