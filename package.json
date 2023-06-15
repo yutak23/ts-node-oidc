@@ -8,6 +8,7 @@
 	"scripts": {
 		"tsc": "tsc",
 		"lint": "eslint . --ext .cjs,.mjs,.js,.ts,.cts,.mts",
+		"lint:fix": "eslint . --ext .cjs,.mjs,.js,.ts,.cts,.mts --fix",
 		"style": "prettier --write .",
 		"prepare": "npx simple-git-hooks"
 	},
@@ -16,6 +17,9 @@
 		"commit-msg": "npx commitlint -e"
 	},
 	"lint-staged": {
+		"**/*.{cjs,mjs,js,ts,cts,mts}": [
+			"eslint"
+		],
 		"yarn.lock": "npx license-checker --production --failOn \"GPL;AGPL;LGPL;NGPL\" --summary"
 	},
 	"devDependencies": {
