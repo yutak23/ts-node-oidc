@@ -17,10 +17,11 @@
 		"commit-msg": "npx commitlint -e"
 	},
 	"lint-staged": {
+		"*": "prettier --ignore-unknown --write",
 		"**/*.{cjs,mjs,js,ts,cts,mts}": [
 			"eslint"
 		],
-		"yarn.lock": "npx license-checker --production --failOn \"GPL;AGPL;LGPL;NGPL\" --summary"
+		"yarn.lock": "license-checker --production --failOn \"GPL;AGPL;LGPL;NGPL\" --summary"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.6.5",
