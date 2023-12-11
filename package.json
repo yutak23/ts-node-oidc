@@ -31,7 +31,7 @@
 		"@commitlint/types": "^17.8.1",
 		"@tsconfig/node16": "^16.1.1",
 		"@tsconfig/strictest": "^2.0.2",
-		"@types/node": "^16.18.68",
+		"@types/node": "^18.19.3",
 		"@typescript-eslint/eslint-plugin": "^6.13.2",
 		"@typescript-eslint/parser": "^6.13.2",
 		"eslint": "^8.55.0",
